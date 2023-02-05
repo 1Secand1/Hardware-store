@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="carousel.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Safehouse </title>
+</head>
+
+<body>
+  <header class="header">
+    <img class="header__logo" src="img/Logo.svg" alt="">
+    <menu class="menu">
+      <ul class="menu__list">
+        <li class="menu__item">
+          <p></p>
+        </li>
+        <li class="menu__item">
+          <a href="#provided">Услуги</a>
+        </li>
+        <li class="menu__item">
+          <a href="#prices">Цены</a>
+        </li>
+        <li class="menu__item">
+          <a href="#footer">Контакты</a>
+        </li>
+      </ul>
+    </menu>
+    <div class="header__aside">
+      <p class="header__phome">+375 (25) 123-45-67</p>
+      <button class="header__button">Заказать звонок </button>
+    </div>
+  </header>
+  <main class="main">
+    <div class="preview ">
+      <div class="preview__info ">
+        <h1 class="preview__taitl">Строительство и ремонт в Дом </h1>
+        <p class="preview__text">Надежное будущее строим вместе</p>
+        <button class="btn preview__btn">Получить консультацию </button>
+      </div>
+
+
+      <section class="slider-box">
+        <div class="slider__border">
+          <div class="slider">
+            <div id="img-container" class="images-container">
+              <img class="slider-item fade" src="img/carousel__slide/Rectangle 113.png" alt="Дом">
+              <img class="slider-item fade" src="img/carousel__slide/Rectangle 114.png" alt="Гостинная">
+              <img class="slider-item fade" src="img/carousel__slide/Rectangle 115.png" alt="Ванное помещение">
+              <img class="slider-item fade" src="img/carousel__slide/Rectangle 116.png" alt="Зона отдыха">
+            </div>
+            <div class="buttons-block">
+              <div id="prev-btn"></div>
+              <div id="next-btn"></div>
+            </div>
+            <div id="dots-block">
+              <button class="dot dot-active"></button>
+              <button class="dot"></button>
+              <button class="dot"></button>
+              <button class="dot"></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    </div>
+    <div class="us-work">
+      <div class="title">
+        <span class="title__aside-element"></span>
+        <h1 class="title__title">КАК МЫ РАБОТАЕМ</h1>
+        <span class="title__aside-element"></span>
+      </div>
+
+      <ol class="us-work__list">
+        <li class="us-work__item">
+          <p class="us-work__text">Бесплатный выезд мастера на объект для оценки работы </p>
+        </li>
+        <li class="us-work__item ">
+          <p class="us-work__text">Обсуждение работы с заказчиком </p>
+        </li>
+        <li class="us-work__item ">
+          <p class="us-work__text">Оформление и подписание договора</p>
+        </li>
+        <li class="us-work__item">
+          <p class="us-work__text">Выполнение работ в соответствии с пожеланиями заказчика</p>
+        </li>
+        <li class="us-work__item">
+          <p class="us-work__text">Прием работы заказчиком и окончательный расчет</p>
+        </li>
+      </ol>
+    </div>
+    <div class="services-provided">
+      <a name="provided"></a>
+      <h2 class="services-provided__taitel">НАШИ УСЛУГИ</h2>
+      <ul class="services-provided__content">
+        <li onclick="tabs('tabs-1')" class="tabs__btn">
+          <img class="services-provided__img" src="img/tabs/1.png" alt="Отделочные работы">
+          <p class="tabs__item-taitel">Отделочные работы</p>
+        </li>
+        <li onclick="tabs('tabs-2')" class="tabs__btn">
+          <img class="services-provided__img" src="img/tabs/2.png" alt="Строительство домов">
+          <p class="tabs__item-taitel">Строительство домов</p>
+        </li>
+        <li onclick="tabs('tabs-3')" class="tabs__btn">
+          <img class="services-provided__img" src="img/tabs/3.png" alt="Электрика">
+          <p class="tabs__item-taitel">Электрика</p>
+        </li>
+        <li onclick="tabs('tabs-4')" class="tabs__btn">
+          <img class="services-provided__img" src="img/tabs/4.png" alt="Сантехника">
+          <p class="tabs__item-taitel">Сантехника</p>
+        </li>
+
+        <li class="tabs__content">
+          <!-- <img class="services-provided__img" src="img/tabs/1.png" alt=""> -->
+          <ul id="tabs-1" class="tabs__content-element img_tabs1">
+            <p class="tabs__content-taitel">Отделочные работы</p>
+            <li class="">Электромонтажные и сантехн ические работы</li>
+            <li class="">Демонтажные работы</li>
+            <li class="">Штукатурные работы </li>
+            <li class="">Малярные работы</li>
+            <li class="">Монтаж ГКЛ</li>
+            <li class="">Облицовка стен и потолков</li>
+            <li class="">Укладка плитки</li>
+            <li class="">Укладка всех видов наполных покрытий</li>
+          </ul>
+          <ul id="tabs-2" class="tabs__content-element img_tabs2" style="display: none">
+            <p class="tabs__content-taitel">Строительство домов</p>
+            <li class="">Профессиональная укладка блоков ПГС</li>
+            <li class="">Укладка кирпича </li>
+            <li class="">Укладка пазогребневых плит</li>
+            <li class="">Монтаж плит</li>
+            <li class="">Монтаж перекрытий</li>
+            <li class="">монтаж балок и пермычек</li>
+            <li class="">Изготовление монолитного пола</li>
+            <li class="">Установка перегородок</li>
+            <li class="">Установка вентиляционных каналов</li>
+            <li class="">Кровельные работы любой сложности</li>
+          </ul>
+          <ul id="tabs-3" class="tabs__content-element img_tabs3" style="display: none">
+            <p class="tabs__content-taitel">Электрика</p>
+            <li class="">Замена розеток и выключателей</li>
+            <li class="">Перенос розеток и выключателей</li>
+            <li class="">Замена электропроводки</li>
+            <li class="">Сборка электросчетчиков</li>
+            <li class="">Установка электросчетчиков</li>
+          </ul>
+          <ul id="tabs-4" class="tabs__content-element img_tabs4" style="display: none">
+            <p class="tabs__content-taitel">Сантехника</p>
+            <li class="">Перенос и установка счетчиков</li>
+            <li class="">Монтаж и ремонт водопровода</li>
+            <li class="">Монтаж отоплния</li>
+            <li class="">Монтаж канализации</li>
+            <li class="">Замена и перенос полотенцесушителя</li>
+            <li class="">Установка кранов на полотенцесушитель</li>
+            <li class="">Установка инсталляций</li>
+            <li class="">Установка всех видов сантех оборудования</li>
+            <li class="">Замена батарей отопления</li>
+            <li class="">Замена и демонтаж радиатора отопления</li>
+            <li class="">Замена труб в ванной и туалете</li>
+            <li class="">Замена труб на пластиковые</li>
+            <li class="">Монтаж трубопроводов ПВХ</li>
+            <li class="">Замена и демонтаж радиатора отопления</li>
+          </ul>
+        </li>
+      </ul>
+      <p class="tabs__text">
+        Для многих ремонт — это что-то вроде стихийного бедствия, но чем тщательнее вы его спланируете, тем проще будет
+        его пережить. А уютная, привлекательная и чистая квартира – это мечта любого человека.
+      </p>
+    </div>
+
+    <h2 class="filled-form__taitel">Давайте воплотим Ваши мечты в реальность!</h2>
+    <div class="filled-form">
+      <div class="filled-form__content">
+        <div class="form">
+          <h3 class="form__taitle">ЗАПОЛНИТЕ ФОРМУ</h3>
+          <input class="form__input" type="text" placeholder="Ваше имя">
+          <input class="form__input" type="tel" name="" id="" placeholder="Номер телефона">
+          <p>Опишите Вашу заявку</p>
+          <textarea class="form__input form__input--height" type="text"></textarea>
+          <button class="btn">Получить консультацию</button>
+          <p class="form__checkbox-text"><input class="form__checkbox" type="checkbox" name="" id="">
+            Принимаю условия Политики конфединциальности
+          </p>
+        </div>
+      </div>
+      <img class="filled-form__img" src="img/filled-form__img-variation1.png" alt="Два человека">
+    </div>
+    </div>
+
+    <div class="info">
+      <div class="info__text-content">
+        <ul class="info__list">
+          <h2 class="info__taitel">О НАС</h2>
+          <li class="info__item">Качественное проведение работ</li>
+          <li class="info__item">Обсуждение работы на каждом этапе</li>
+          <li class="info__item">Профессиональный инструмент</li>
+          <li class="info__item">Начинаем работу без аванса</li>
+          <li class="info__item">Доступные цены
+          </li>
+        </ul>
+      </div>
+      <div class="slider-info">
+        <div class="slider-info__content">
+          <p class="slider-info__text">более</p>
+          <h2 class="slider-info__taitel">15</h2>
+          <p class="slider-info__text">лет успешной работы</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery">
+      <div class="title gallery__title">
+        <span class="title__aside-element"></span>
+        <h1 class="title__title">ГАЛЕРЕЯ РАБОТ</h1>
+        <span class="title__aside-element"></span>
+      </div>
+
+      <div class="gallery__container">
+        <div class="gallery__border-img">
+          <div class="gallery__img-box">
+            <img class="gallery__img" src="img/gallery__container/1.png" alt="">
+            <p class="gallery__img-text">ПЛИТКА</p>
+          </div>
+        </div>
+        <div class="gallery__border-img">
+          <div class="gallery__img-box">
+            <img class="gallery__img" src="img/gallery__container/2.png" alt="">
+            <p class="gallery__img-text">КЛАДКА</p>
+          </div>
+        </div>
+        <div class="gallery__border-img">
+          <div class="gallery__img-box">
+            <img class="gallery__img" src="img/gallery__container/3.png" alt="">
+            <p class="gallery__img-text">ОТДЕЛКА</p>
+            </img>
+          </div>
+        </div>
+        <div class="gallery__border-img">
+          <div class="gallery__img-box">
+            <img class="gallery__img" src="img/gallery__container/4.png" alt="">
+            <p class="gallery__img-text">КРОВЛЯ</p>
+          </div>
+        </div>
+        <div class="gallery__border-img">
+          <div class="gallery__img-box">
+            <img class="gallery__img" src="img/gallery__container/5.png" alt="">
+            <p class="gallery__img-text">САНТЕХНИКА</p>
+          </div>
+        </div>
+        <div class="gallery__border-img">
+          <div class="gallery__img-box">
+            <img class="gallery__img" src="img/gallery__container/6.png" alt="">
+            <p class="gallery__img-text">ЭЛЕКТРИКА</p>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="prices">
+      <a name="prices"></a>
+      <h2 class="prices__taitel">ПРАЙС-ЛИСТ НА УСЛУГИ</h2>
+
+      <div class="prices__content">
+        <ul class="prices__header">
+          <li id="active-1" onclick="tabsTwo('tabs-2.1','active-1')" class="prices__item prices__item--active">
+            Отделка
+          </li>
+          <li id="active-2" onclick="tabsTwo('tabs-2.2','active-2')" class="prices__item ">
+            Строительство
+          </li>
+          <li id="active-3" onclick="tabsTwo('tabs-2.3','active-3')" class="prices__item">
+            Кровля
+          </li>
+          <li id="active-4" onclick="tabsTwo('tabs-2.4','active-4')" class="prices__item">
+            Сантехника
+          </li>
+          <li id="active-5" onclick="tabsTwo('tabs-2.5','active-5')" class="prices__item">
+            Электроника
+          </li>
+        </ul>
+
+
+        <table id="tabs-2.1" class="prices__table ">
+          <tr>
+            <th class="prices__table-taitle">Наименование работ-1</th>
+            <td class="prices__table-taitle">Ед.из</td>
+            <td class="prices__table-taitle">Цена</td>
+          </tr>
+          <tr>
+            <th>Штукатурка по маякам </th>
+            <td>м²</td>
+            <td>24</td>
+          </tr>
+          <tr>
+            <th>Установка и демонтаж маяка</th>
+            <td>м²</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <th>Штукатурка потолка по плоскости</th>
+            <td>м²</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <th>Монтаж армирующей сетки</th>
+            <td>м²</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <th>Монтаж ГКЛ (ровный)</th>
+            <td>м²</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <th>Монтаж конструкций ГКЛ короб</th>
+            <td>м.пог</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <th>Монтаж конструкций ГКЛ со скрытой подсветкой</th>
+            <td>м.пог</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <th>Монтаж криволинейного потолочного откоса</th>
+            <td>м.пог</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <th>Финишное шлифование и зачистка потолка</th>
+            <td>м.пог</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <th>Проклейка швов серпянкой </th>
+            <td>м.пог</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <th>Монтаж подвесного потолка «Грильято»</th>
+            <td>м²</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <th>Монтаж подвесного потолка «Армстронг»</th>
+            <td>м²</td>
+            <td>8</td>
+          </tr>
+          <tr>
+            <th>Монтаж пластиковых панелей на потолке </th>
+            <td>м²</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <th>Монтаж натяжного потолка (с материалом) </th>
+            <td>м²</td>
+            <td>8</td>
+          </tr>
+          <tr>
+            <th>Поклейка декоративного багета (галтель)</th>
+            <td>м.пог</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <th>Подготовка конструкции короб ГКЛ к покраске</th>
+            <td>м²</td>
+            <td>16</td>
+          </tr>
+          <tr>
+            <th>Выравнивание балок одна плоскость </th>
+            <td>м.пог</td>
+            <td>44</td>
+          </tr>
+          <tr>
+            <th>Установка перфорированного угла </th>
+            <td>м²</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <th>Шлифовка </th>
+            <td>м.пог</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <th>Заделка стыков ГКЛ, проклейка ленты </th>
+            <td>м²</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <th>Покраска потолка </th>
+            <td>м²</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <th>Покраска конструкций ГКЛ </th>
+            <td>м.пог</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <th>Окраска , полиуретанового потолочного плинтуса</th>
+            <td>м²</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <th>Оклейка потолочного плинтуса пенопласт </th>
+            <td>м.пог</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <th>Грунтовка</th>
+            <td>м.пог</td>
+            <td>2</td>
+          </tr>
+        </table>
+
+        <table id="tabs-2.2" class="prices__table" style="display: none">
+          <tr>
+            <th class="prices__table-taitle">Наименование работ-2</th>
+            <td class="prices__table-taitle">Ед.из</td>
+            <td class="prices__table-taitle">Цена</td>
+          </tr>
+          <tr>
+            <th>Штукатурка по маякам </th>
+            <td>м²</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <th>Установка и демонтаж маяка</th>
+            <td>м²</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <th>Штукатурка потолка по плоскости</th>
+            <td>м²</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <th>Монтаж армирующей сетки</th>
+            <td>м²</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <th>Монтаж ГКЛ (ровный)</th>
+            <td>м²</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <th>Монтаж конструкций ГКЛ короб</th>
+            <td>м.пог</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <th>Монтаж конструкций ГКЛ со скрытой подсветкой</th>
+            <td>м.пог</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <th>Монтаж криволинейного потолочного откоса</th>
+            <td>м.пог</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <th>Финишное шлифование и зачистка потолка</th>
+            <td>м.пог</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <th>Проклейка швов серпянкой </th>
+            <td>м.пог</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <th>Монтаж подвесного потолка «Грильято»</th>
+            <td>м²</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <th>Монтаж подвесного потолка «Армстронг»</th>
+            <td>м²</td>
+            <td>8</td>
+          </tr>
+          <tr>
+            <th>Монтаж пластиковых панелей на потолке </th>
+            <td>м²</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <th>Монтаж натяжного потолка (с материалом) </th>
+            <td>м²</td>
+            <td>8</td>
+          </tr>
+          <tr>
+            <th>Поклейка декоративного багета (галтель)</th>
+            <td>м.пог</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <th>Подготовка конструкции короб ГКЛ к покраске</th>
+            <td>м²</td>
+            <td>16</td>
+          </tr>
+          <tr>
+            <th>Выравнивание балок одна плоскость </th>
+            <td>м.пог</td>
+            <td>44</td>
+          </tr>
+          <tr>
+            <th>Установка перфорированного угла </th>
+            <td>м²</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <th>Шлифовка </th>
+            <td>м.пог</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <th>Заделка стыков ГКЛ, проклейка ленты </th>
+            <td>м²</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <th>Покраска потолка </th>
+            <td>м²</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <th>Покраска конструкций ГКЛ </th>
+            <td>м.пог</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <th>Окраска , полиуретанового потолочного плинтуса</th>
+            <td>м²</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <th>Оклейка потолочного плинтуса пенопласт </th>
+            <td>м.пог</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <th>Грунтовка</th>
+            <td>м.пог</td>
+            <td>2</td>
+          </tr>
+        </table>
+
+        <table id="tabs-2.3" class="prices__table" style="display: none">
+          <tr>
+            <th class="prices__table-taitle">Наименование работ-3</th>
+            <td class="prices__table-taitle">Ед.из</td>
+            <td class="prices__table-taitle">Цена</td>
+          </tr>
+          <tr>
+            <th>Штукатурка по маякам </th>
+            <td>м²</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <th>Установка и демонтаж маяка</th>
+            <td>м²</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <th>Штукатурка потолка по плоскости</th>
+            <td>м²</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <th>Монтаж армирующей сетки</th>
+            <td>м²</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <th>Монтаж ГКЛ (ровный)</th>
+            <td>м²</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <th>Монтаж конструкций ГКЛ короб</th>
+            <td>м.пог</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <th>Монтаж конструкций ГКЛ со скрытой подсветкой</th>
+            <td>м.пог</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <th>Монтаж криволинейного потолочного откоса</th>
+            <td>м.пог</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <th>Финишное шлифование и зачистка потолка</th>
+            <td>м.пог</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <th>Проклейка швов серпянкой </th>
+            <td>м.пог</td>
+            <td>13</td>
+          </tr>
+          <tr>
+            <th>Монтаж подвесного потолка «Грильято»</th>
+            <td>м²</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <th>Монтаж подвесного потолка «Армстронг»</th>
+            <td>м²</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <th>Монтаж пластиковых панелей на потолке </th>
+            <td>м²</td>
+            <td>11</td>
+          </tr>
+          <tr>
+            <th>Монтаж натяжного потолка (с материалом) </th>
+            <td>м²</td>
+            <td>7</td>
+          </tr>
+          <tr>
+            <th>Поклейка декоративного багета (галтель)</th>
+            <td>м.пог</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>Подготовка конструкции короб ГКЛ к покраске</th>
+            <td>м²</td>
+            <td>16</td>
+          </tr>
+          <tr>
+            <th>Выравнивание балок одна плоскость </th>
+            <td>м.пог</td>
+            <td>44</td>
+          </tr>
+          <tr>
+            <th>Установка перфорированного угла </th>
+            <td>м²</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <th>Шлифовка </th>
+            <td>м.пог</td>
+            <td>15</td>
+          </tr>
+          <tr>
+            <th>Заделка стыков ГКЛ, проклейка ленты </th>
+            <td>м²</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <th>Покраска потолка </th>
+            <td>м²</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <th>Покраска конструкций ГКЛ </th>
+            <td>м.пог</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <th>Окраска , полиуретанового потолочного плинтуса</th>
+            <td>м²</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <th>Оклейка потолочного плинтуса пенопласт </th>
+            <td>м.пог</td>
+            <td>8</td>
+          </tr>
+          <tr>
+            <th>Грунтовка</th>
+            <td>м.пог</td>
+            <td>12</td>
+          </tr>
+        </table>
+
+        <table id="tabs-2.4" class="prices__table" style="display: none">
+          <tr>
+            <th class="prices__table-taitle">Наименование работ-4</th>
+            <td class="prices__table-taitle">Ед.из</td>
+            <td class="prices__table-taitle">Цена</td>
+          </tr>
+          <tr>
+            <th>Штукатурка по маякам </th>
+            <td>м²</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <th>Установка и демонтаж маяка</th>
+            <td>м²</td>
+            <td>8</td>
+          </tr>
+          <tr>
+            <th>Штукатурка потолка по плоскости</th>
+            <td>м²</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <th>Монтаж армирующей сетки</th>
+            <td>м²</td>
+            <td>8</td>
+          </tr>
+          <tr>
+            <th>Монтаж ГКЛ (ровный)</th>
+            <td>м²</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <th>Монтаж конструкций ГКЛ короб</th>
+            <td>м.пог</td>
+            <td>8</td>
+          </tr>
+          <tr>
+            <th>Монтаж конструкций ГКЛ со скрытой подсветкой</th>
+            <td>м.пог</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <th>Монтаж криволинейного потолочного откоса</th>
+            <td>м.пог</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <th>Финишное шлифование и зачистка потолка</th>
+            <td>м.пог</td>
+            <td>7</td>
+          </tr>
+          <tr>
+            <th>Проклейка швов серпянкой </th>
+            <td>м.пог</td>
+            <td>6</td>
+          </tr>
+          <tr>
+            <th>Монтаж подвесного потолка «Грильято»</th>
+            <td>м²</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <th>Монтаж подвесного потолка «Армстронг»</th>
+            <td>м²</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <th>Монтаж пластиковых панелей на потолке </th>
+            <td>м²</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <th>Монтаж натяжного потолка (с материалом) </th>
+            <td>м²</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <th>Поклейка декоративного багета (галтель)</th>
+            <td>м.пог</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <th>Подготовка конструкции короб ГКЛ к покраске</th>
+            <td>м²</td>
+            <td>16</td>
+          </tr>
+          <tr>
+            <th>Выравнивание балок одна плоскость </th>
+            <td>м.пог</td>
+            <td>44</td>
+          </tr>
+          <tr>
+            <th>Установка перфорированного угла </th>
+            <td>м²</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <th>Шлифовка </th>
+            <td>м.пог</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <th>Заделка стыков ГКЛ, проклейка ленты </th>
+            <td>м²</td>
+            <td>7</td>
+          </tr>
+          <tr>
+            <th>Покраска потолка </th>
+            <td>м²</td>
+            <td>8</td>
+          </tr>
+          <tr>
+            <th>Покраска конструкций ГКЛ </th>
+            <td>м.пог</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <th>Окраска , полиуретанового потолочного плинтуса</th>
+            <td>м²</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <th>Оклейка потолочного плинтуса пенопласт </th>
+            <td>м.пог</td>
+            <td>6</td>
+          </tr>
+          <tr>
+            <th>Грунтовка</th>
+            <td>м.пог</td>
+            <td>8</td>
+          </tr>
+        </table>
+
+        <table id="tabs-2.5" class="prices__table" style="display: none">
+          <tr>
+            <th class="prices__table-taitle">Наименование работ-5</th>
+            <td class="prices__table-taitle">Ед.из</td>
+            <td class="prices__table-taitle">Цена</td>
+          </tr>
+          <tr>
+            <th>Штукатурка по маякам </th>
+            <td>м²</td>
+            <td>11</td>
+          </tr>
+          <tr>
+            <th>Установка и демонтаж маяка</th>
+            <td>м²</td>
+            <td>6</td>
+          </tr>
+          <tr>
+            <th>Штукатурка потолка по плоскости</th>
+            <td>м²</td>
+            <td>15</td>
+          </tr>
+          <tr>
+            <th>Монтаж армирующей сетки</th>
+            <td>м²</td>
+            <td>42</td>
+          </tr>
+          <tr>
+            <th>Монтаж ГКЛ (ровный)</th>
+            <td>м²</td>
+            <td>30</td>
+          </tr>
+          <tr>
+            <th>Монтаж конструкций ГКЛ короб</th>
+            <td>м.пог</td>
+            <td>21</td>
+          </tr>
+          <tr>
+            <th>Монтаж конструкций ГКЛ со скрытой подсветкой</th>
+            <td>м.пог</td>
+            <td>22</td>
+          </tr>
+          <tr>
+            <th>Монтаж криволинейного потолочного откоса</th>
+            <td>м.пог</td>
+            <td>42</td>
+          </tr>
+          <tr>
+            <th>Финишное шлифование и зачистка потолка</th>
+            <td>м.пог</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <th>Проклейка швов серпянкой </th>
+            <td>м.пог</td>
+            <td>9</td>
+          </tr>
+          <tr>
+            <th>Монтаж подвесного потолка «Грильято»</th>
+            <td>м²</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <th>Монтаж подвесного потолка «Армстронг»</th>
+            <td>м²</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <th>Монтаж пластиковых панелей на потолке </th>
+            <td>м²</td>
+            <td>14</td>
+          </tr>
+          <tr>
+            <th>Монтаж натяжного потолка (с материалом) </th>
+            <td>м²</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <th>Поклейка декоративного багета (галтель)</th>
+            <td>м.пог</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <th>Подготовка конструкции короб ГКЛ к покраске</th>
+            <td>м²</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <th>Выравнивание балок одна плоскость </th>
+            <td>м.пог</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <th>Установка перфорированного угла </th>
+            <td>м²</td>
+            <td>7</td>
+          </tr>
+          <tr>
+            <th>Шлифовка </th>
+            <td>м.пог</td>
+            <td>7</td>
+          </tr>
+          <tr>
+            <th>Заделка стыков ГКЛ, проклейка ленты </th>
+            <td>м²</td>
+            <td>8</td>
+          </tr>
+          <tr>
+            <th>Покраска потолка </th>
+            <td>м²</td>
+            <td>6</td>
+          </tr>
+          <tr>
+            <th>Покраска конструкций ГКЛ </th>
+            <td>м.пог</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <th>Окраска , полиуретанового потолочного плинтуса</th>
+            <td>м²</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <th>Оклейка потолочного плинтуса пенопласт </th>
+            <td>м.пог</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <th>Грунтовка</th>
+            <td>м.пог</td>
+            <td>5</td>
+          </tr>
+        </table>
+
+
+        <button class="btn prices__btn">Cкачать весь прайс</button>
+
+      </div>
+
+    </div>
+
+    <h2 class="filled-form__taitel">Давайте воплотим Ваши мечты в реальность!</h2>
+    <div class="filled-form filled-form--reverse">
+      <div class="filled-form__content ">
+        <div class="form">
+          <h3 class="form__taitle">ЗАПОЛНИТЕ ФОРМУ </h3>
+          <input class="form__input" type="text" placeholder="Ваше имя">
+          <input class="form__input" type="tel" name="" id="" placeholder="Номер телефона">
+          <p class="form__text"> Опишите Вашу заявку</p>
+          <textarea class="form__input form__input--height" type="text"></textarea>
+          <button class="btn">Получить консультацию</button>
+          <p class="form__checkbox-text"><input class="form__checkbox" type="checkbox" name="" id="">
+            Принимаю условия Политики конфединциальности
+          </p>
+        </div>
+      </div>
+      <img class="filled-form__img" src="img/filled-form__img-variation2.png" alt="">
+    </div>
+    </div>
+
+  </main>
+  <footer>
+    <a name="footer"></a>
+    <div class="footer__list-row">
+      <ul class="footer__list">
+        <li class="footer__item">+ 375-29-123-45-67</li>
+        <li class="footer__item">stroyka@gmail.com</li>
+      </ul>
+
+      <ul class="footer__list">
+        <li class="footer__item">ИП Костин А.Н.</li>
+        <li class="footer__item">УНП 11111111111</li>
+        <li class="footer__item">Юридический адрес</li>
+      </ul>
+    </div>
+    <p class="footer__text">© Lisand 2023</p>
+  </footer>
+
+</body>
+<script type="text/javascript" src="script.js"></script>
+
+</html>
